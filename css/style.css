@@ -1,13 +1,14 @@
-/* --- ZÁKLAD --- */
+/* --- ZÁKLADNÍ NASTAVENÍ --- */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #000;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
+/* Kontejner */
 .kontejner {
     width: 1000px;
     margin: 0 auto;
@@ -22,7 +23,7 @@ body, html {
     background-color: rgba(17, 17, 17, 0.95);
     height: 70px;
     border-bottom: 3px solid #0B68B2;
-    position: fixed;
+    position: fixed; /* Menu drží nahoře na PC */
     width: 100%;
     z-index: 100;
 }
@@ -32,7 +33,7 @@ body, html {
     line-height: 70px;
     font-size: 22px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .navigace {
@@ -40,23 +41,27 @@ body, html {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .navigace li {
     display: inline-block;
     line-height: 70px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 .navigace a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    text-transform: uppercase;
 }
 
-/* --- BANNER (FULLSCREEN) --- */
+.navigace a:hover {
+    color: #0B68B2;
+}
+
+/* --- HLAVNÍ BANNER (INDEX.HTML) --- */
 .hlavni-banner {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/main.jpg');
     background-size: cover;
@@ -69,31 +74,32 @@ body, html {
 }
 
 .banner-text h1 {
-    font-size: 45px;
+    font-size: 50px;
     margin: 0;
 }
 
 .popis-firmy {
     margin: 20px 0;
+    padding: 10px;
 }
 
 .tlacitko {
     background-color: #0B68B2;
     color: white;
-    padding: 15px 35px;
+    padding: 15px 40px;
     text-decoration: none;
     display: inline-block;
     font-weight: bold;
     border: 2px solid #0B68B2;
 }
 
-/* --- OBSAH OSTATNÍCH STRÁNEK --- */
+/* --- OSTATNÍ STRÁNKY --- */
 .hlavni-obsah {
-    min-height: 75vh;
+    min-height: 80vh;
 }
 
 .odsazeni-shora {
-    padding-top: 110px;
+    padding-top: 120px;
 }
 
 .nadpis-stranky {
@@ -101,7 +107,7 @@ body, html {
     margin-bottom: 40px;
 }
 
-/* GRID SLUŽBY */
+/* SLOUPCE U SLUŽEB */
 .sluzba-vlevo {
     width: 480px;
     float: left;
@@ -125,16 +131,6 @@ body, html {
     object-fit: cover;
 }
 
-/* KONTAKT */
-.kontakt-info {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.mapa-box {
-    border: 2px solid #0B68B2;
-}
-
 /* --- PATIČKA --- */
 .paticka {
     clear: both;
@@ -148,23 +144,49 @@ body, html {
     clear: both;
 }
 
-/* --- RESPONZIVITA (MOBILNÍ VERZE) --- */
 @media screen and (max-width: 1050px) {
+    
     .kontejner {
         width: 95%;
     }
-    
-    .sluzba-vlevo, .sluzba-vpravo {
-        width: 100%;
-        float: none;
-        margin-bottom: 20px;
+
+    .menu-pozadi {
+        height: auto;
+        position: relative;
+        padding-bottom: 15px;
     }
-    
+
+    .logo {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+        line-height: normal;
+        display: block;
+    }
+
+    .navigace {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+    }
+
+    .navigace li {
+        margin: 5px 10px;
+        line-height: normal;
+    }
+
+    .odsazeni-shora {
+        padding-top: 40px;
+    }
+
     .banner-text h1 {
         font-size: 30px;
     }
-    
-    .navigace li {
-        margin-left: 10px;
+
+    .sluzba-vlevo, .sluzba-vpravo {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
     }
 }
