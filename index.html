@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Events Production - Úvod</title>
+    <title>Sports Events Production</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-black text-white">
 
-    <div class="menu-pozadi">
-        <div class="kontejner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-primary">
+        <div class="container">
             <div class="logo"><img src="img/logo.png" alt="Logo" style="height: 50px; margin-top: 10px;"></div>
-            <ul class="navigace">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="sluzby.html">Služby</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="hlavni-banner">
-        <div class="banner-text">
-            <h1>SPORTS EVENTS <span class="modry-text">PRODUCTION</span></h1>
-            
-            <div class="popis-firmy">
-                <h2>Vítejte u nás</h2>
-                <p>Jsme firma, která se stará o sportovní turnaje a techniku.<br>
-                Děláme vše od scénáře až po realizaci.</p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sluzby.html">Služby</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
             </div>
-
-            <a href="sluzby.html" class="tlacitko">NAŠE NABÍDKA</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="paticka">
-        <p>© 2026 Sports Events Production</p>
-    </div>
+    <header class="hero-banner d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-1 fw-bold">SPORTS EVENTS <span class="text-primary">PRODUCTION</span></h1>
+            <div class="py-4">
+                <h2 class="h3">Vítejte u nás</h2>
+                <p class="lead">Kompletní realizace sportovních akcí od A do Z.</p>
+            </div>
+            <a href="sluzby.html" class="btn btn-primary btn-lg px-5 py-3 rounded-0 fw-bold">NAŠE NABÍDKA</a>
+        </div>
+    </header>
 
+    <footer class="bg-dark text-center py-4 mt-auto">
+        <p class="m-0 text-secondary">© 2026 Sports Events Production</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

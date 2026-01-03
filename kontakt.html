@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt - Sports Events Production</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-black text-white d-flex flex-column min-vh-100">
 
-    <div class="menu-pozadi">
-        <div class="kontejner">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-primary">
+        <div class="container">
             <div class="logo"><img src="img/logo.png" alt="Logo" style="height: 50px; margin-top: 10px;"></div>
-            <ul class="navigace">
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="sluzby.html">Služby</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="hlavni-obsah odsazeni-shora">
-        <div class="kontejner">
-            <h2 class="nadpis-stranky">KONTAKTUJTE <span class="modry-text">NÁS</span></h2>
-
-            <div class="kontakt-info">
-                <p><strong>Adresa:</strong> Sportovní 500, 140 00 Praha 4</p>
-                <p><strong>Email:</strong> info@sportsevents.cz</p>
-                <p><strong>Tel:</strong> +420 123 456 789</p>
-            </div>
-
-            <div class="mapa-box">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.383!2d14.4!3d50.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDAwJzAwLjAiTiAxNMKwMjQnMDAuMCJF!5e0!3m2!1scs!2scz!4v123456789" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-uppercase fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Domů</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sluzby.html">Služby</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="paticka">
-        <p>© 2026 Sports Events Production</p>
-    </div>
+    <main class="container py-5 mt-5">
+        <h2 class="text-center display-4 fw-bold mb-5 text-uppercase">Kontaktujte <span class="text-primary">nás</span></h2>
 
+        <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+                <div class="p-4 bg-dark border border-primary h-100">
+                    <h3 class="h4 text-primary mb-4">Kde nás najdete?</h3>
+                    <p class="mb-2"><strong>Adresa:</strong> Sportovní 500, 140 00 Praha 4</p>
+                    <p class="mb-2"><strong>Email:</strong> <a href="mailto:info@sportsevents.cz" class="text-white">info@sportsevents.cz</a></p>
+                    <p class="mb-4"><strong>Tel:</strong> +420 123 456 789</p>
+                    <hr class="border-primary">
+                    <p class="small text-secondary">Provozní doba: Po-Pá 9:00 - 18:00</p>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="ratio ratio-16x9 border border-primary">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.123456789!2d14.42!3d50.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9492e1234567%3A0x123456789!2zUHJhaGE!5e0!3m2!1scs!2scz!4v123456789" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-center py-4 mt-auto">
+        <p class="m-0 text-secondary">© 2026 Sports Events Production</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
